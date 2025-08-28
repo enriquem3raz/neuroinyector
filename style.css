@@ -1,0 +1,213 @@
+/* ================= GENERAL ================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima de la ventana */
+}
+
+/* ================= HEADER ================= */
+header {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 20px;
+}
+header img {
+    width: 100px;
+}
+
+/* ================= SECCIONES ================= */
+section {
+    padding: 40px 20px;
+    flex: 0 0 auto; /* evita que las secciones se estiren en flexbox */
+}
+
+/* ================= DESCRIPCIÓN ================= */
+.descripcion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #f4f4f4; /* fondo igual que equipo */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+}
+.descripcion img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+/* ================= VISIÓN Y MISIÓN ================= */
+.vision-mision {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #f4f4f4; /* fondo como equipo */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+}
+.vision-mision img {
+    width: 45%; /* igual que neuro2.jpg */
+    border-radius: 10px;
+}
+
+/* ================= BENEFICIOS ================= */
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+.beneficios li {
+    margin: 8px 0;
+}
+
+/* ================= NUESTROS PRODUCTOS ================= */
+.precios {
+    position: relative; /* Para el fondo detrás de los productos */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f4f4f4; /* igual que la sección de equipo */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #fff; /* fondo de cada tarjeta */
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ================= TESTIMONIOS ================= */
+.testimonios {
+    padding: 40px 20px;
+    background: #f4f4f4; /* igual que equipo */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.testimonios blockquote {
+    border-left: 5px solid #0077ff;
+    margin: 20px 0;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+/* ================= EQUIPO ================= */
+.equipo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #f4f4f4; /* fondo suave para la sección */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.miembro {
+    text-align: center;
+    width: 200px;
+    background: #fff; /* tarjeta blanca elegante */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.miembro img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #182635; /* borde azul elegante */
+}
+
+.miembro h3 {
+    margin: 15px 0 5px 0;
+    color: #222; /* color de texto elegante */
+}
+
+.miembro p {
+    color: #555; /* texto secundario */
+    font-size: 0.9rem;
+}
+
+/* efecto hover elegante */
+.miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= UBICACIÓN ================= */
+.ubicacion {
+    padding: 40px 20px;
+}
+
+.ubicacion iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+/* ================= CTA ================= */
+.cta {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.boton:hover {
+    background: #005ecb;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* asegura que siempre esté al final */
+}
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .descripcion img, .vision-mision img {
+        width: 100%;
+    }
+    .producto, .miembro {
+        width: 100%;
+    }
+}
